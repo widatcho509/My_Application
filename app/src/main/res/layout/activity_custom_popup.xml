@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="25dp"
+    android:background="#CC6E6E6E"
+    android:layout_height="match_parent"
+    tools:context=".CustomPopup">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/popup"
+        android:id="@+id/linearPadre1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X"
+                android:paddingRight="15dp"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="#070606"/>
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="15dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/linearPadre">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linear2"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgDescrip"
+                            android:layout_width="320dp"
+                            android:src="@drawable/mayo"
+                            android:layout_height="320dp"
+                            />
+
+                        <RatingBar
+                            style="@style/RatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="3dp"
+
+                            />
+
+                    </LinearLayout>
+                    /*****/
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/linearDescrip"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txt_descart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:text="Remera Negra Simple"
+                    android:textStyle="bold"
+                    android:textColor="#0C0C0C"/>
+                <TextView
+                    android:id="@+id/txt_precio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:layout_marginTop="5dp"
+                    android:text="$ 150.00"
+                    android:textStyle="italic"
+                    android:textColor="#B71C1C"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Talle : XXL/XL/L/M"
+                    android:textStyle="italic"
+                    android:textColor="#006064"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Materia : Algodon"
+                    android:textStyle="bold"
+                    android:textColor="#5E5B5B"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:layout_marginTop="5dp"
+                    android:text="En Stock"
+                    android:textStyle="bold"
+                    android:textColor="#5E5B5B"/>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:id="@+id/linearIcon">
+
+                <ImageView
+                    android:id="@+id/imgMale"
+                    android:layout_width="30dp"
+                    android:layout_height="27dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/male" />
+                <ImageView
+                    android:id="@+id/imgFavorite"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/favorite"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    />
+                <ImageView
+                    android:id="@+id/imgCart"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/cart"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    />
+                <ImageView
+                    android:id="@+id/imgBuying"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/buy"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                        android:text="Ctd :" />
+
+            <ImageButton
+                android:id="@+id/imgMen"
+                android:src="@drawable/min"
+
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:id="@+id/etcantidad"
+                android:background="@drawable/etborder"
+                android:text="1"/>
+            <ImageButton
+                android:id="@+id/imgSum"
+                android:src="@drawable/add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtPrice"
+                android:text="523"
+                android:textSize="15dp"
+                android:textStyle="italic"
+                android:textColor="#DA3838"/>
+            <Button
+                android:id="@+id/btn_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comprar"
+                android:layout_marginStart="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
